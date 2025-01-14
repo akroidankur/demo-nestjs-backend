@@ -6,7 +6,7 @@ import { StaffsService } from './staffs/staffs.service';
 
 @Injectable()
 export class GlobalMiddleware implements NestMiddleware {
-  private readonly excludedRoutes = ['/auth/login', '/auth/logout'];
+  private readonly excludedRoutes = ['/auth/login', '/auth/logout', ''];
   private readonly trackedRoutes = [
     /^\/customers\/[a-zA-Z0-9]+\/?$/,
     /^\/roles\/[a-zA-Z0-9]+\/?$/,

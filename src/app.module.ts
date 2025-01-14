@@ -7,6 +7,8 @@ import { JwtService } from '@nestjs/jwt';
 import { GlobalMiddleware } from './global.middleware';
 import { RolesModule } from './roles/roles.module';
 import { StaffsModule } from './staffs/staffs.module';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -20,8 +22,8 @@ import { StaffsModule } from './staffs/staffs.module';
     RolesModule,
     CustomersModule
   ],
-  controllers: [],
-  providers: [JwtService],
+  controllers: [AppController],
+  providers: [JwtService, AppService],
 })
 
 export class AppModule implements NestModule {
