@@ -1,6 +1,7 @@
 {
     "version": 2,
-    "buildCommand": "npm run build:prod",
+    "buildCommand": "npm run build",
+    "startCommand": "npm run start:prod",
     "outputDirectory": "dist",
     "builds": [
         {
