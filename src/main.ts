@@ -12,7 +12,7 @@ async function bootstrap() {
   app.use((req: Request, res: Response, next: NextFunction) => {
     const allowedOrigins = [
       'http://localhost:4200', // for local
-      'https://demo-nestjs-backend.onrender.com',  // for stage
+      'https://demo-angular-frontend.vercel.app',  // for stage
     ];
 
     const origin = req.headers.origin as string;
